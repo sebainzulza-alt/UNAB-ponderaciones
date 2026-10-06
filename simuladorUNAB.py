@@ -10,8 +10,7 @@ st.set_page_config(
 
 st.title("🎓 Simulador de Puntajes Ponderados UNAB")
 st.markdown(
-    "Selecciona tu carrera y calcula tu ponderación oficial considerando de"
-    " forma inteligente la **prueba electiva (Historia o Ciencias)**."
+    "Selecciona la carrera y calcula la ponderación oficial considerando de la **prueba electiva (Historia o Ciencias)**."
 )
 
 
@@ -36,7 +35,7 @@ try:
 
   # 1. Menú desplegable de selección
   carrera_seleccionada = st.selectbox(
-      "Selecciona tu Carrera, Sede y Régimen:",
+      "Selecciona la Carrera, Sede y Régimen:",
       df_pond["CARRERA_SEDE"].unique(),
   )
 
