@@ -18,7 +18,7 @@ st.markdown(
 # Cargar los datos desde el Excel oficial
 @st.cache_data
 def cargar_datos():
-  file_path = "Maestra ID carreras y vías 202710_25AGO.xlsx"
+  file_path = "ponderaciones UNAB.xlsx"
   df = pd.read_excel(file_path, sheet_name="PONDERACIONES")
   df["CARRERA_SEDE"] = (
       df["CARRERA"].str.strip()
